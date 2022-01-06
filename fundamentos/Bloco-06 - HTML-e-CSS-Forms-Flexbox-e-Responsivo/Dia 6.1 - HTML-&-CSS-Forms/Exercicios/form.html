@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML & CSS - FORMS</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário De Currículo</h1>
+    </header>
+    <main>
+        <form action="" method="GET" enctype="multipart/form-data">
+
+            <section id="sectionOne">
+                <fieldset>
+                    <legend>DADOS PESSOAIS:</legend>
+                        <div>
+                            <label for="name-complet">Nome Completo:
+                                <input type="text" name="name" id="name-complet" maxlength="40" placeholder="Digite seu nome" required>
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label for="email">E-mail:
+                                <input type="text" name="email" id="email" maxlength="50" placeholder="Digite seu e-mail" required>
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label for="cpf">CPF:
+                                <input type="number" name="cpf" id="cpf" maxlength="11" placeholder="Digite seu CPF" required>
+                            </label>  
+                        </div>
+                        
+                        <div>
+                            <label for="address">Endereço:
+                                <input type="text" name="address" id="address" maxlength="200" placeholder="Digite seu endereço" required>
+                            </label>
+                        </div>
+                       
+                        <div>
+                            <label for="city">Cidade:
+                                <input type="text" name="city" id="city" maxlength="28" placeholder="Digite seu cidade" required>
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label for="state">Estado:</label>
+                            <select name="state" id="state" placeholder="escolha um estado" required>Estado:
+                                <option value="" selected >Escolha o estado</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="">Tipo de moradia:</label>
+                            <input type="radio" name="placeHome" id="home">
+                            <label for="home">Casa</label>
+                            <input type="radio" name="placeHome" id="apartment">
+                            <label for="apartment">Apartamento</label>
+                        </div>
+                    </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>DADOS DO CURRÍCULO</legend>
+
+                    <div>
+                        <label for="cvTextArea" required>Resumo do currículo:</label>
+                        
+                        <textarea name="cvTextArea" id="cvTextArea" cols="40" rows="7" maxlength="1000" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="office">Cargo:
+                            <input type="text" name="office" id="office" maxlength="40" required>
+                            </label>
+                    </div>
+                    
+                    <div>
+                        <label for="description">Descreva as atribuições do último cargo:
+                            <input type="text" name="description" id="description" maxlength="500" required>
+                        </label>
+                    </div>
+                    
+                    <div class="dateOffice">
+                        <label for="dateInit" id="dateCamp" class="dataCamp">Data de início
+                        <input type="text" name="dateInit" id="dateInit" required>
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </section>
+            
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
