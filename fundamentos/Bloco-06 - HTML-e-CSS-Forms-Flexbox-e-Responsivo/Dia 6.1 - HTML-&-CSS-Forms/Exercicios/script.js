@@ -48,3 +48,15 @@ function formatDate(event) {
 }
 
 date.addEventListener('keyup', formatDate)
+
+let sumNumber = 0;
+
+const arrAverage = [];
+if (arrAverage.length === "") {
+  return undefined;
+}
+  for (const averageNow in arrAverage) {
+    if (typeof arrAverage[averageNow] !== 'number') {
+      return undefined;
+    }
+}
